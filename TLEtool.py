@@ -14,7 +14,7 @@ today = date.today()
 
 class Componants(object):
     
-    def __init__(self, fp):
+    def __init__(self, fp):                 #Assumes text file with 1 TLE in it from line 1
         with open (fp, 'r') as f:
             self.lines = f.readlines()
             f.close()
